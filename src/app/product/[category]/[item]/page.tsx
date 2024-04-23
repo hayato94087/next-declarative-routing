@@ -1,6 +1,6 @@
-import Link from "next/link";
 import { FC } from "react";
 import { headers } from "next/headers";
+import { Home } from "@/routes";
 
 type Props = {
   params: {
@@ -18,7 +18,7 @@ const Page: FC<Props> = (props) => {
         <header className="p-5 bg-red-100 flex flex-row justify-between">
           <h1 className="text-lg font-bold self-center">{requestUrl}</h1>
           <div className="text-sm text-blue-800 py-2 px-3 rounded-md underline underline-offset-2 hover:text-blue-600">
-            <Link href={"/"}>戻る</Link>
+            <Home.Link>戻る</Home.Link>
           </div>
         </header>
         <main className="p-5 bg-green-100 flex flex-col space-y-5">
