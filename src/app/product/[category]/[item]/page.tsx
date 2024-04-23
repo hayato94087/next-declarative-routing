@@ -1,12 +1,11 @@
 import { FC } from "react";
 import { headers } from "next/headers";
 import { Home } from "@/routes";
+import { Route } from "./page.info";
+import { z } from "zod";
 
 type Props = {
-  params: {
-    category: string;
-    item: string;
-  };
+  params: z.infer<typeof Route.params>;
 };
 
 const Page: FC<Props> = (props) => {
