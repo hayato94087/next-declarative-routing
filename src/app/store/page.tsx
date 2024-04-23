@@ -1,9 +1,11 @@
 import { type FC } from "react";
 import { headers } from "next/headers";
 import { Home } from "@/routes";
+import { Route } from "./page.info";
+import { z } from "zod";
 
 type Props = {
-  searchParams: { [key: string]: string | string[] | undefined };
+  searchParams: z.infer<typeof Route.searchParams>;
 };
 
 const Page: FC<Props> = (props) => {
