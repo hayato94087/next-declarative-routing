@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 export const Route = {
-  name: "Store",
+  name: "Shop",
   params: z.object({}),
   searchParams: z.object({
     a: z.string().optional(),
