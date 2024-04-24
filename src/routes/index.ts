@@ -8,7 +8,7 @@ const defaultInfo = {
 
 import * as HomeRoute from "@/app/page.info";
 import * as ProductDetailRoute from "@/app/product/[category]/[item]/page.info";
-import * as StoreRoute from "@/app/store/page.info";
+import * as StoreRoute from "@/app/shop/page.info";
 import * as StudentSlugRoute from "@/app/student/[...slug]/page.info";
 import * as UserSlugRoute from "@/app/user/[slug]/page.info";
 
@@ -27,7 +27,7 @@ export const ProductDetail = makeRoute(
   }
 );
 export const Store = makeRoute(
-  "/store",
+  "/shop",
   {
     ...defaultInfo,
     ...StoreRoute.Route
