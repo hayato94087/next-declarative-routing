@@ -1,4 +1,4 @@
-import { ProductCategoryItem, Store, StudentSlug, UserSlug } from "@/routes";
+import { ProductDetail, Store, StudentSlug, UserSlug } from "@/routes";
 import { FC } from "react";
 
 type Props = {};
@@ -39,9 +39,9 @@ const Page: FC<Props> = (props) => {
               <div className="flex flex-col space-y-3 bg-blue-100 p-5">
                 <div className="flex flex-row">
                   <h2 className="text-sm text-blue-800 py-2 px-3 rounded-md underline underline-offset-2 hover:text-blue-600">
-                    <ProductCategoryItem.Link category="dvd" item="anime">
+                    <ProductDetail.Link category="dvd" item="anime">
                       http://localhost:3000/product/dvd/anime
-                    </ProductCategoryItem.Link>
+                    </ProductDetail.Link>
                   </h2>
                 </div>
               </div>

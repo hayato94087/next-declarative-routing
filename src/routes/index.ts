@@ -7,7 +7,7 @@ const defaultInfo = {
 };
 
 import * as HomeRoute from "@/app/page.info";
-import * as ProductCategoryItemRoute from "@/app/product/[category]/[item]/page.info";
+import * as ProductDetailRoute from "@/app/product/[category]/[item]/page.info";
 import * as StoreRoute from "@/app/store/page.info";
 import * as StudentSlugRoute from "@/app/student/[...slug]/page.info";
 import * as UserSlugRoute from "@/app/user/[slug]/page.info";
@@ -19,11 +19,11 @@ export const Home = makeRoute(
     ...HomeRoute.Route
   }
 );
-export const ProductCategoryItem = makeRoute(
+export const ProductDetail = makeRoute(
   "/product/[category]/[item]",
   {
     ...defaultInfo,
-    ...ProductCategoryItemRoute.Route
+    ...ProductDetailRoute.Route
   }
 );
 export const Store = makeRoute(
